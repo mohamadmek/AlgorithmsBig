@@ -11,3 +11,5 @@ const newArr = arr.sort().reverse();
 
 console.log(newArr[k - 1]);
 
+// Time Complexity:  O(n^2)
+

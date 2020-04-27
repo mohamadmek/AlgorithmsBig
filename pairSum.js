@@ -9,11 +9,10 @@
 // Pair found at index 1 and 4
 arr = [8,7,2,5,3,1];
 n= 10;
-sum = 0;
 const pairSum = (n) => {
   for(let i = 0; i < arr.length; i++) {
     for(let j = i+1; j < arr.length; j++){
-      if((arr[i] + arr[j]) == 10){
+      if((arr[i] + arr[j]) == n){
         console.log(`Pair found at index ${arr.indexOf(arr[i])} and ${arr.indexOf(arr[j])}`)
         break;
       }
@@ -21,4 +20,6 @@ const pairSum = (n) => {
   }
 }
 
-pairSum();
+pairSum(n);
+
+// Time complexity O(n2)
